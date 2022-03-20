@@ -1,26 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
 </head>
+
 <body>
+    <main class="calculator">
+        <div class="topbar">
+            <h1 class="title">calc</h1>
+            <div class="theme">
+                <span>THEME</span>
+                <div class="range-container">
+                    <div class="theme-name"><span>1</span> <span>2</span> <span>3</span></div>
+                    <input class="theme-switcher" type="range" min="1" max="3" value="1" />
+                </div>
+            </div>
+        </div>
+        <div class="display">
+            <input type="text" readonly class="display__input" />
+        </div>
+        <div class="keyboard">
+            <button type="button" class="btn btn--primary" value="7">7</button>
+            <button type="button" class="btn btn--primary" value="8">8</button>
+            <button type="button" class="btn btn--primary" value="9">9</button>
+            <button type="button" class="btn btn--secondary" value="del">DEL</button>
+            <button type="button" class="btn btn--primary" value="4">4</button>
+            <button type="button" class="btn btn--primary" value="5">5</button>
+            <button type="button" class="btn btn--primary" value="6">6</button>
+            <button type="button" class="btn btn--primary" value="+">+</button>
+            <button type="button" class="btn btn--primary" value="1">1</button>
+            <button type="button" class="btn btn--primary" value="2">2</button>
+            <button type="button" class="btn btn--primary" value="3">3</button>
+            <button type="button" class="btn btn--primary" value="-">-</button>
+            <button type="button" class="btn btn--primary" value=".">.</button>
+            <button type="button" class="btn btn--primary" value="0">0</button>
+            <button type="button" class="btn btn--primary" value="/">/</button>
+            <button type="button" class="btn btn--primary" value="*">x</button>
+            <button type="button" class="reset btn btn--secondary" value="clear-all">RESET</button>
+            <button type="button" class="equal btn btn--tertiary" value="=">=</button>
+        </div>
+    </main>
 
+    <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+            href="#">Your Name Here</a>.
+    </div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <script type="module" src="script.js"></script>
 </body>
+
 </html>
