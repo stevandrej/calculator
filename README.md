@@ -8,8 +8,8 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/calculator-DcdCNwc5-](https://www.frontendmentor.io/solutions/calculator-DcdCNwc5-)
+- Live Site URL: [https://calculator-khaki-ten.vercel.app/](https://calculator-khaki-ten.vercel.app/)
 
 ### Built with
 
